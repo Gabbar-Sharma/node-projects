@@ -1,10 +1,20 @@
 
 
-const add = (a, b , callback) =>{
-const all = a + b
-console.log(all);
-callback();
-}
-add(34 , 345 , function callback(){
-     console.log("This is a callback function");
+// const add = (a, b , callback) =>{
+// const all = a + b
+// console.log(all);
+// callback();
+// }
+// add(34 , 345 , function callback(){
+//      console.log("This is a callback function");
+// })
+
+const fs = require("fs")
+const os = require("os")
+
+const data = fs.appendFile("data.txt", "this is data file" , () => {
+console.log("file is created");
 })
+
+const user = os.userInfo()
+console.log(user);
