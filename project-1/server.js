@@ -22,4 +22,9 @@ console.log(user);
 const a = 34;
 const b = 45
 console.log(a-b)
+if(a > b){
+    console.log("a is greater than b");
+}   else{
+    console.log("b is greater than a");
+}   
 
