@@ -18,3 +18,7 @@ console.log("file is created");
 
 const user = os.userInfo()
 console.log(user);
+
+const a = 34;
+const b = 45
+console.log(a+b)
