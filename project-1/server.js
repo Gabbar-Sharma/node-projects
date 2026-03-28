@@ -1,32 +1,11 @@
+import express from 'express'
 
-const combo = require("./combo")
-// const add = (a, b , callback) =>{
-// const all = a + b
-// console.log(all);
-// callback();
-// }
-// add(34 , 345 , function callback(){
-//      console.log("This is a callback function");
-// })
+const app = express()
 
-// const fs = require("fs")
-// const os = require("os")
+app.get('/', (req, res) => {
+  res.send('Hello World')
+})
 
-// const data = fs.appendFile("data.txt", "this is data file" , () => {
-// console.log("file is created");
-// })
-
-// const user = os.userInfo()
-// console.log(user);
-
-// const a = 34;
-// const b = 45
-// console.log(a-b)
-// if(a > b){
-//     console.log("a is greater than b");
-// }   else{
-//     console.log("b is greater than a");
-// }   
-
-console.log("This is server file");
-console.log(combo.age);
+app.listen(3000, () => {
+  console.log('Server is running on http://localhost:3000')
+})
